@@ -36,6 +36,11 @@ var monedas = module.exports = {};
  */
 monedas.esMonedaValida = function (valor) {
     // Escribir el código necesario para que vayan pasando las pruebas una a una.
+    //Comprobar que el valor es una moneda valida
+    if (valor == 0.01 || valor == 0.02 || valor == 0.05 || valor == 0.1 || valor == 0.2 || valor == 0.5 || valor == 1 || valor == 2 || valor == 5 || valor == 10 || valor == 20 || valor == 50 || valor == 100 || valor == 200 || valor == 500)  
+        return true;
+    else
+        return false;
 }
 
 /**
@@ -50,6 +55,7 @@ monedas.esMonedaValida = function (valor) {
  */
 monedas.suficienteParaPagar = function (vectorMonedas, montante) {
        // Escribir el código necesario para que vayan pasando las pruebas una a una.
+       
 }
 
 /*
